@@ -22,7 +22,7 @@ public class VP8DecoderTest {
 	private ByteBuffer bb;
 	private VP8Decoder dec;
 
-	@Ignore
+	// @Ignore
 	@Test
 	public void _testKF() throws Exception {
 		Picture pic = Picture.create(640, 480, ColorSpace.YUV420);
@@ -31,7 +31,7 @@ public class VP8DecoderTest {
 		AWTUtil.writePNG(decoded, Utils.tildeExpand("~/decoded.png"));
 	}
 
-	@Ignore
+	// @Ignore
 	@Test
 	public void _testKFToPicture() throws Exception {
 		Picture pic = Picture.create(640, 480, ColorSpace.YUV420);

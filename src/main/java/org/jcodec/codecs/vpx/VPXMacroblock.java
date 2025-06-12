@@ -540,7 +540,7 @@ public class VPXMacroblock {
         public BPredictionMode mode;
         public boolean someValuePresent;
         private short[] tokens;
-        private VPXMacroblock self;
+        public VPXMacroblock self;
 
         public Subblock(VPXMacroblock self, int row, int col, VP8Util.PLANE plane) {
             this.self = self;

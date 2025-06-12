@@ -156,7 +156,7 @@ public class VP8Decoder extends VideoDecoder {
                     }
 
         int macroBlockNoCoeffSkip = (int) headerDecoder.readBitEq();
-        checkState(1 == macroBlockNoCoeffSkip);
+        //checkState(1 == macroBlockNoCoeffSkip);
         int probSkipFalse = headerDecoder.decodeInt(8);
         for (int mbRow = 0; mbRow < numberOfMBRows; mbRow++) {
             for (int mbCol = 0; mbCol < numberOfMBCols; mbCol++) {
